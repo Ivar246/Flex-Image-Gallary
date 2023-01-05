@@ -65,7 +65,7 @@ width: 100vw;
 .panel > *{
     text-transform: uppercase;
     transition: transform 0.5s,
-    color 0.5s ease-in;
+    color 0.5s ease-in-out;
     width: 100%;
     display: flex;
     justify-content: center;
