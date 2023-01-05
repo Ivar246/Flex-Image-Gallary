@@ -65,7 +65,7 @@ width: 100vw;
 .panel > *{
     text-transform: uppercase;
     transition: transform 0.5s,
-    color 1.2s ease-in;
+    color 0.5s ease-in;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -86,7 +86,10 @@ width: 100vw;
 
 @media only screen and (max-width: 600px) {
     .panel p {
-      font-size: 1em;
+      font-size: 15px;
+    }
+    .panel.open{
+    font-size: 25px;
     }
   }
     
