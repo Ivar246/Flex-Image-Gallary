@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Satisfy', cursive;
+}
+
+body{
+height: 100vh;
+width: 100vw;
+}
+
+.panels{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+
+
+}
+.panel{
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    transition: font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,0.5),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,0.5),
+    background 0.2s;
+}
+.panel1{
+    background-image:linear-gradient(to right top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+    url(images/andrea-de-santis-DSeNTzqrfMw-unsplash.jpg);
+
+}   
+
+.panel2{
+    background-image:linear-gradient(to right top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+     url(/images/cody-chan-8a63U2IOCy0-unsplash.jpg);
+}
+
+.panel3{
+    background-image:linear-gradient(to right top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+     url(/images/joel-de-vriend-6iGvBaZSwec-unsplash.jpg);
+}
+
+.panel4{
+    background-image: linear-gradient(to right top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(/images/samsung-uk-SH5Stmpf5OQ-unsplash.jpg);
+}
+
+.panel5{
+    background-image:linear-gradient(to right top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+     url(/images/mailchimp-YTZOyio3Udk-unsplash.jpg);
+}
+
+.panel > *{
+    text-transform: uppercase;
+    transition: transform 0.5s,
+    color 1.2s ease-in;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.panel > *:first-child{ transform: translateY(-100%);}
+.panel.open-active>*:first-child{transform: translateY(0);}
+.panel > *:last-child{transform: translateY(100%);}
+.panel.open-active>*:last-child{transform: translateY(0);}
+
+.panel.open{
+    font-size: 35px;
+    flex: 4;
+    color: rgb(163, 101, 101);
+}
