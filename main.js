@@ -4,8 +4,7 @@ function addFlexAnimation() {
 }
 
 function toggleActive(e) {
-  if (e.propertyName.includes("flex-grow"))
-    this.classList.toggle("open-active");
+  if (e.propertyName === "flex-grow") this.classList.toggle("open-active");
 }
 
 panels.forEach((panel) => panel.addEventListener("click", addFlexAnimation));
